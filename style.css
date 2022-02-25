@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #E3E4EE;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 10px;
+}
+nav p {
+  font-size: large;
+  font-weight: bold;
+}
+nav div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+section.search {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background: #FFFFFF;
+  padding: 6px;
+  border-radius: 4px;
+  width: 300px;
+  margin: 20px auto;
+}section.search input#search::placeholder{
+  text-transform: capitalize;
+}
+section.search input#search {
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  caret-color: #0015FF;
+}
+section.search button {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 9px;
+  border: none;
+  border-radius: 6px;
+  background: #4853CB;
+  color: #fff;
+}
+section.search button:active {
+  color: #3F4584;
+  background: #65FF00;
+}
+
+section.container {
+  background: #105285;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 20px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+section.container p {
+  font-family: 'Courier New', Courier, monospace;
+}
+section.container div.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+section.container aside {
+  background: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+}
+section.container aside p {
+  margin: 8px;
+}
+section.container aside p:first-child {
+  text-transform: capitalize;
+}
+section.container aside p:last-child {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+section.container div.info div:first-child img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+article div:last-child > div {
+  display: flex;
+  gap: 5px;
+  margin: 10px auto;
+}
